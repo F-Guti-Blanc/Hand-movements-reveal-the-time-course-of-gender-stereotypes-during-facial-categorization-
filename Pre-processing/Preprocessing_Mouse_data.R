@@ -51,7 +51,7 @@ library(MASS)
 
 # add directory where all the participant data is
 
-setwd("/Users/pacogutierrez/Desktop/TFM_PUBLICACION/sujetos")
+setwd("...../subjects.")
 
 
 # Customising the colour palette
@@ -64,7 +64,7 @@ custom_colors_4 <- custom_colors[c(1, 4, 5, 6)]
 
 #Import all the raw data of the participants into the same data set (data_raw)
 
-data_raw <- read_opensesame(directory = "/Users/pacogutierrez/Desktop/TFM_PUBLICACION/sujetos", extension = ".csv")
+data_raw <- read_opensesame(directory = "...../subjects", extension = ".csv")
 
 
 #Check for missing values
