@@ -1,0 +1,35 @@
+
+1.1 MAD Curvature Index. Mixed-Effect Model.
+
+To find the optimal model to fit the MAD variation in our data, we performed two procedures. 
+The first to identify the optimal structure for fixed effects and the second for random effects.
+
+First, to find the optimal structure of the fixed effects, all possible mixed models were designed by 
+varying this structure and leaving the random effects of participants and stimuli untouched. Then, only 
+the models that had no problems of fit or convergence were selected(using as exclusion criterion the 
+outputs that indicated error in the R program after running each of the models), resulting in a total 
+of 3 models. Model 1 (lmer1_FE) considered Congruence, Task and their interaction as fixed effects.
+Model 2 (lmer2_FE), Congruence and Task without interaction effect, while model 3 (lmer3_FE), only the
+fixed effect of Congruence. To select the best fitting model, the 3 models were gradually compared one
+by one, based on their complexity, using likelihood ratio tests and Akaike's information criterion, AIC 
+(a lower value indicates a better fit). The results of the likelihood ratio test showed a significant
+difference between models 1 and 2 (X2 (1) = 11.034, p < 0.001), with the first model (lmer1_FE, AIC = 76586)
+providing a better fit than the second (lmer2_FE, AIC = 76595). We then compared model 1 with model 3, again 
+finding significant differences between the two (X2 (2) = 53.163, p < 0.001), with a better fit of the first 
+(lmer1_FE, AIC = 76586) compared to the third (lmer3_FE, AIC = 76635).
+
+Once the optimal structure of the fixed effects, was found, we performed the same procedure, this time varying
+the structure of the random effects. Of all the possible models, only 4 gave no fit problems. Model 13 (lmer13_RE)
+considered the interaction between the random effects (participants and stimuli) with the variable Task. Model 3 
+(lmer3_RE), only the interaction between the random effect participants and task. Model 15 (lmer15_RE), the interaction
+between the random effect stimuli and Task. Finally, Model 5 (lmer5_RE) did not include the interaction of the random
+effects with any fixed effects. Likelihood ratio tests revealed significant differences between models 13 and 
+3 (X2 (2) = 17.4, p < 0.001), with a better fit of the first (lmer13_RE: AIC = 76573; lmer3_RE: AIC = 76586), and significant
+differences between models 13 and 15 (X2 (4) = 21.694, p < 0.001), again with a better fit of model 13 (lmer13_RE: AIC = 76573;
+lmer15_RE: AIC = 76586). However, no difference (X2 (2) = 4.3238, p = 0.1151) was found between model 13 and model 5. 
+
+Taken together, these results suggest that the model that best explains the variability of the MAD indices in our data considers 
+as fixed effects the Congruence, the Task and its interaction, and as random effects the participants, the stimuli and their 
+interaction with the Task.
+
+
