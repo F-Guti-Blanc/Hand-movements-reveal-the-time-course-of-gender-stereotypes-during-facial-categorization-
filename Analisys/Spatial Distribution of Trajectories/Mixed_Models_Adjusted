@@ -1,0 +1,23 @@
+1.2 Spatial Distribution of Trajectories. Cumulative Mixed Effects Model
+
+In order to identify the cumulative mixed-effects model that best explains the distribution of trajectories 
+in the 5 prototypes, we followed a process similar to that described above for the mixed-effects models of the MAD indices.
+
+First, we determined the structure of the fixed effects. To achieve this, we created various models by altering the structure 
+of the fixed effects, Congruence and Task, while keeping the random effects unaltered. This led to a total of 3 models. 
+We subsequently calculated the AIC indices for each model and selected the most fit model. Model 1 (clm1_FE; AIC = 14660),
+that considered Congruence, Task and their interaction as fixed effects.
+
+Second, we chose the structure of the random effects that best fit our data. To achieve this, we designed all possible models, 
+25 in total, always keeping the fixed effects of congruence, task and their interaction. In this instance, none of the models 
+exhibited any issues in terms of fit. Therefore, rather than gradually selecting the best model based on their complexity, 
+we calculated the AIC values for each one, subsequently opting for the best fit - in this case, model 22 (MRE_22; AIC = 14649). 
+This particular model takes into account both the participants and the interaction between congruency and task with the stimuli
+as random effects.
+
+Finally, we compared the two resulting models using likelihood ratio tests and Akaike's information criterion, AIC.
+Likelihood ratio tests revealed significant differences between models 22 and 1 (X2 (5) = 21.047, p < 0.0005), 
+with a better fit of the first (MRE_22: AIC = 14649; MFE_1: AIC = 14660). Taken together, these results indicate that the model
+that best explains the distribution of trajectories among the 5 prototypes is model 22, including Congruence, Task and their 
+interaction as fixed effects and participants, stimuli and the interaction of the latter with Congruence and Task as random effects.
+
